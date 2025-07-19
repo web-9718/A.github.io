@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shahbaz Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #e6f0ff;
+      color: #003366;
+    }
+    header {
+      background: linear-gradient(to right, #0055cc, #0099ff);
+      padding: 50px 20px;
+      text-align: center;
+      color: white;
+      font-size: 2.5em;
+      font-weight: bold;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: #fff;
+    }
+    nav {
+      background: #003366;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: yellow;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #003366;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #0055cc;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #003366;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Shahbaz Developer
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p style="text-align:center;">
+    Hello! I'm <strong>Shahbaz</strong>, a passionate web developer specializing in HTML, CSS, and front-end design. I create responsive, modern, and elegant websites.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">💻 HTML5</div>
+    <div class="card">🎨 CSS3</div>
+    <div class="card">⚙️ JavaScript</div>
+    <div class="card">📱 Responsive Design</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>A personal branding portfolio built with pure HTML/CSS.</p>
+    </div>
+    <div class="card">
+      <h3>Landing Page</h3>
+      <p>A product landing page with responsive layout and animations.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p style="text-align:center;">
+    Email: <a href="mailto:shahbaz@example.com">shahbaz@example.com</a><br/>
+    GitHub: <a href="https://github.com/shahbaz" target="_blank">github.com/shahbaz</a><br/>
+    <button onclick="alert('Thanks for reaching out!')">Say Hello</button>
+  </p>
+</section>
+
+<footer>
+  &copy; 2025 Shahbaz Developer | All Rights Reserved
+</footer>
+
+</body>
+</html>
